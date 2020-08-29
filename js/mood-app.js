@@ -18,16 +18,20 @@ $( document ).ready(function() {
     $('.sidebar-section').css('display', 'none');
     $('.sidebar-wrap').css('border-right', '0px');
     var $smallScreenImage = ('<img class="small-screen-image" src="https://www.bela-design.com.au/wp-content/uploads/2020/06/image-12.png">');
-    $('body').append($smallScreenImage);
+    $('#smallAppend').append($smallScreenImage);
     var $smallScreenMessage = 
     ('<p class="small-screen">Looking for the Bela mood board app? Please try again on your desktop.</p>');
-    $('body').append($smallScreenMessage);
+    $('#smallAppend').append($smallScreenMessage);
+
+    var $footerHeight = $('#footer-bottom').outerHeight();
+    console.log($footerHeight);
+    var $screenHeight = $(window).innerHeight();
+    console.log($screenHeight);
+    var $topMargin = $screenHeight - $footerHeight;
+    $('#footer-bottom').css('margin-top', $topMargin + 'px');
   }
 
 });
-
-
-
 
 // Colour selector code
 function update(jscolor) {
@@ -41,6 +45,7 @@ function update(jscolor) {
 }
 
 // Drag and drop
+// TODO : Add ability to drag and drop images from upload to canvas
 // interact('.draggable')
 //   .draggable({
 //     // enable inertial throwing
@@ -79,27 +84,3 @@ function dragMoveListener (event) {
 
 // this function is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
-
-
-window.addEventListener("load", function() {
-  
-  // Click to download your moodboard as an image
-  // var cHeight = 750;
-  // var cWidth = 750;
-  // var canvas = document.getElementById( 'moodCanvas' ),
-  // c = canvas.getContext( '2d' );
-
-  // // resize the canvas
-  // canvas.width = cWidth;
-  // canvas.height = cHeight;
-
-  // var link = document.createElement('a');
-  // link.innerHTML = 'Download my mood board';
-  // link.addEventListener('click', function(ev) {
-  //     link.href = canvas.toDataURL();
-  //     // link.download = "mymoodboard.png";
-  //     link.download = "mymoodboard.jpg";
-  // }, false);
-  // document.getElementById('saveImageButton').appendChild(link);
-
-});
