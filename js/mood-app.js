@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+  $('[data-toggle="tooltip"]').tooltip()
   
   // Set the div height to be equal to the div class
   // Used in the "Add images to " section in sidebar
