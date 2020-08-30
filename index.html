@@ -161,6 +161,11 @@
       <div class="sidebar-section">
         <h5 class="sidebar-title">
           Add shapes:
+          <button type="button" class="btn info-button" 
+            data-placement="top" data-toggle="tooltip" data-html="true"
+            title="<p>Double click to add a shape to the board.</p>">
+            <img src="svg/info.svg">
+          </button>
         </h5>
           <div class="shapes tool-group">
               <ul>
@@ -234,7 +239,13 @@
           <ul class="all-placement-tools bottom">
             <li class="arrange">
               <ul class="tool-group">
-                <li class="title">Arrange(i): </li>
+                <li class="title">Arrange: 
+                  <button type="button" class="btn info-button" 
+                    data-placement="bottom" data-toggle="tooltip" data-html="true"
+                    title="<p>Move a selected object forward or back relative to other objects on the board.</p>">
+                    <img src="svg/info.svg">
+                  </button>
+                </li>
                 <li class="arrange-layers" id="sendToBack"><img src="svg/send-to-back.svg" height="20" width="20"></li>
                 <li class="arrange-layers" id="sendBackOne"><img src="svg/back-one.svg" height="20" width="20"></li>
                 <li class="arrange-layers" id="sendForwardOne"><img src="svg/forward-one.svg" height="20" width="20"></li>
