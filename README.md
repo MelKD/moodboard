@@ -9,4 +9,4 @@ Optimised for Chrome, the page can be viewed by opening index.html in a Chrome b
 ## View live version
 
 A live implementation of the site can be viewed here:
-https://www.bela-design.com.au/moodboard.html
+https://melissakyd.com/moodboard/
