@@ -4,5 +4,6 @@ An app using fabric.js to create a simple tool for creating mood boards directly
 
 ## View live version
 
-A live implementation of the site can be viewed here:
-https://melissakyd.com/moodboard/
+<img align="center" src="https://github.com/MelKD/moodboard/blob/master/moodboard-fabric-js.png?raw=true" />  
+
+A live implementation of the site can be viewed at https://melissakyd.com/moodboard/
